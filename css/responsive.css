@@ -1,0 +1,352 @@
+/* Responsive Design for Rishi Mistry's Portfolio */
+
+/* Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(10, 25, 47, 0.95);
+        backdrop-filter: blur(10px);
+        transition: 0.4s ease-in-out;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .project-card {
+        width: calc(50% - 1rem);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .project-card {
+        width: calc(33.33% - 1rem);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero-section {
+        height: 100vh;
+    }
+
+    .project-card {
+        width: calc(33.33% - 1.5rem);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Animation Responsiveness */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Responsive Styles for All Devices */
+
+/* Extra Large Devices (1400px and up) */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+/* Large Devices (1200px - 1399px) */
+@media screen and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium Devices (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        padding: 0 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+}
+
+/* Small Devices (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* Header & Navigation */
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        background: rgba(4, 11, 28, 0.95);
+        backdrop-filter: blur(10px);
+        transition: 0.3s ease-in-out;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    }
+
+    .nav-menu.active {
+        top: 72px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image {
+        order: -1;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Extra Small Devices (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Section */
+    .contact-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Mobile Devices (320px - 575px) */
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Header */
+    .header {
+        padding: 0.8rem 0;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-greeting {
+        font-size: 0.9rem;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Loading Screen */
+    .cube-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .loader-text {
+        font-size: 1rem;
+    }
+
+    .loader-progress {
+        width: 150px;
+    }
+}
+
+/* Height-based Media Queries */
+@media screen and (max-height: 600px) {
+    .hero-section {
+        min-height: auto;
+        padding: 6rem 0;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .nav-menu.active {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+
+    .hero-content {
+        padding: 2rem 0;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #040b1c;
+        --text-color: #c8d1e4;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .cube {
+        animation: none;
+    }
+}

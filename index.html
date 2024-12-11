@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Mistry | Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rishi Mistry - Tech Enthusiast & IT Student at N. G. Patel Polytechnic">
+    <meta name="keywords" content="Rishi Mistry, portfolio, tech, IT student, developer">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+            </div>
+            <div class="loader-text">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">RM</span>
+            </a>
+            
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-title">Rishi Mistry</h1>
+                <h2 class="hero-subtitle">I'm a <span class="typed-text"></span></h2>
+                <p class="hero-description">
+                    A passionate tech enthusiast and IT student at N. G. Patel Polytechnic, 
+                    focused on creating innovative digital solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">View My Work</a>
+                    <a href="#contact" class="secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Rishi, a tech enthusiast and IT student based in Gujarat, India. My journey in technology started with a curiosity about how digital systems work, and it has evolved into a passion for creating innovative solutions.</p>
+                        <p>Currently pursuing my diploma in Information Technology at N. G. Patel Polytechnic, I'm focused on building a strong foundation in:</p>
+                        <ul class="about-list">
+                            <li>Web Development</li>
+                            <li>Software Development</li>
+                            <li>Problem Solving</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="assets/profile.jpg" alt="Rishi Mistry" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup, accessibility</p>
+                    </div>
+                    <!-- Add more skill items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project cards will be added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:your.email@example.com" class="primary-btn">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                        <a href="assets/resume.pdf" class="secondary-btn" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Rishi Mistry © 2024</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+    <script src="js/responsive.js"></script>
+</body>
+</html>
